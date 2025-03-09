@@ -16,3 +16,5 @@ let associate ={
 for(let key in associate){
     console.log("KEY = ", key, "VALUE = ", associate[key] );
 }
+
+let arr = [10,20,30,40,50,60];

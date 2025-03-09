@@ -37,7 +37,13 @@ NOTE : in template literal ${obj.cost} the value becomes string as the name is S
 use --> \n
 use --> \t FOR TAB SPACE
 
+### Properties ###
+let arr = [10,20,30,40,50];
+console.log(arr.length) --> this will print the length of the array
+
+
 ### String Methods ###
+
 str.toUpperCase() --> it will capitalise all the small letter and will keep capital letter as it is
 str.toLowerCase() --> it will convert all capital letter to the small letter and will keep the samll letter as it is
 str.trim()        --> it will remove all the spaces between words or letter
@@ -45,4 +51,15 @@ str.slice(start,end) --> it will crop the string from the starting index to (GIV
 str1.concat(str2)    --> this will join two string together
 str.replace(searchVal, newVal) --> this method will search the "searchVal" from the string and replace it with newVal
 str.charAt(index) --> this will find the character present at given index
+
+
+### Arrays ###
+Push() --> add to end
+Pop() --> delete from end & return
+toString() --> converts array to string
+arr1.concat(arr2); --> this will add one array with another array of same data type
+unshift() --> add to start
+shift()     --> delte from start and return
+Slice(start,end) --> this will work same as string
+Splice(startIdx,delCount,newElement) --> this will target the startIdx and if we give delCount then the element from startIdx to startIdx+delCount will be deleted and if we give newElement(102,103) then 102,103 will be plced in place of removed element
 
