@@ -1,0 +1,38 @@
+### For-of loop ###
+let str = "JavaScriptBootcamp"
+
+for( let i of str){ // iterator or iterating each word of a string
+    console.log(i); 
+}
+
+### Count Size of the string ###
+let size = str.length;
+
+### for-in loop ###
+
+let associate ={
+    name : "Suraj Kumar",                       // name = KEY
+    organization : "Cognizant",                 //organization = KEY
+    domain : "QEA-NFT",                         //   domain       "
+    tools : "Neoload, jMeter and LoadRunner",   //   tools        "
+    isWorking : true,                           //  isWorking     "
+}
+
+for(let key in associate){
+    console.log("KEY = ", key, "VALUE = ", associate[key] ); // for printing the key and values of an object
+}
+
+### String interpolation ###  //
+let obj = {
+    item : "pen",
+    cost : 10,
+}
+
+console.log("the product is : ", obj.item, "and the price is : ", obj.cost, "rupees");      //This is normal way
+let ouput = `the product is : ${obj.item} and the price is : ${obj.cost} rupees`;           //This is the use of template literal
+
+NOTE : in template literal ${obj.cost} the value becomes string as the name is STRING interpolation
+
+### Breaking line in JS ### 
+use --> \n
+
