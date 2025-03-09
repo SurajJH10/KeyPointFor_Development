@@ -35,4 +35,14 @@ NOTE : in template literal ${obj.cost} the value becomes string as the name is S
 
 ### Breaking line in JS ### 
 use --> \n
+use --> \t FOR TAB SPACE
+
+### String Methods ###
+str.toUpperCase() --> it will capitalise all the small letter and will keep capital letter as it is
+str.toLowerCase() --> it will convert all capital letter to the small letter and will keep the samll letter as it is
+str.trim()        --> it will remove all the spaces between words or letter
+str.slice(start,end) --> it will crop the string from the starting index to (GIVEN end - 1) // let str = "JavaScript"; let output = str.slice(2,6); ANS :- vaSc
+str1.concat(str2)    --> this will join two string together
+str.replace(searchVal, newVal) --> this method will search the "searchVal" from the string and replace it with newVal
+str.charAt(index) --> this will find the character present at given index
 

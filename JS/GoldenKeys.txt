@@ -1,0 +1,2 @@
+String in JS is immutable 
+Array in JS in mutable
