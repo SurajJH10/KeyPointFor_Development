@@ -63,3 +63,67 @@ shift()     --> delte from start and return
 Slice(start,end) --> this will work same as string
 Splice(startIdx,delCount,newElement) --> this will target the startIdx and if we give delCount then the element from startIdx to startIdx+delCount will be deleted and if we give newElement(102,103) then 102,103 will be plced in place of removed element
 
+### Arrow Function ###      //Compact way of writing a Function
+
+const functionName = (param1,param2)=>{
+
+    ***doing required operation***
+
+}
+ 
+
+ ### forEach Loop in Arrays ###
+
+ arr.forEach(callBackFunction)
+callBackFunction : Here, it is a function to excute for each elementin the arary
+*** A callback is a funtion passed as an argument to another function.
+
+let arr = [1,2,3,4,5];
+
+************Normal Method ***************
+*  arr.forEach(function printVal(val){  *
+*    console.log(val);                  *
+*   });                                 *
+*****************************************
+
+***********Arrow Function****************
+*                                       *
+* arr.forEach((val)=>{                  *
+*   console.log(val);                   *
+*   })                                  *
+*****************************************
+There are 3 parameters in callback function 
+(1) VALUE
+(2) INDEX           (Optional)
+(3) ARRAY itself    (Optional)
+
+strArr.forEach((val,idx,strArr)=>{
+   console.log(val,idx,strArr);
+  }) 
+
+
+
+### Mapping in Array in JS  ###            // Return a new Array after doing operation
+
+arr.map(callbackFnx(value,index,array))
+
+let newArr = arr.map((val)=>{
+    return val*2;
+})
+
+
+
+
+### Filter in Array in JS  ### 
+
+let newArr = arr.filter((val)=>{
+    return val%2===0;
+});
+
+
+
+
+### Reduce in Array in JS  ###          // To perform some operration & reduce the array to a single value. It returns that single value.
+let reduceOutput = arr.reduce((res,curr)=>{
+    return res+curr;
+});
