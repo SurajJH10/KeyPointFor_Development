@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 class Carousal extends Component {
-    
-    render() { 
-        return (<div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" style={{padding: "0px 100px"}}>
+     render() { 
+        return (<div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" >
             <div className="carousel-indicators">
               <button 
                 type="button" 
