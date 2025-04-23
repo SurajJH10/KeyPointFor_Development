@@ -1,6 +1,6 @@
 String in JS is immutable 
 Array in JS in mutable
 
-### Higher order Functin ###
+### Higher order Function ###
 forEach in Array - Higher Order Function(HOF)/ Higher Order Method (HOM)
 Higher Order Function(HOF) : HOF wo function hote hai jo dusre function ko ya to as a parameter le lete hai ya fir kisi dusre function ko return kar rahe hote hai

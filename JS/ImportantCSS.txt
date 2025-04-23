@@ -1,0 +1,3 @@
+.zooming{
+    animation: zooming 1.3S infinite alternate; //this is for zooming out and in for infinite loop
+}

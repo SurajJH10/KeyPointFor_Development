@@ -1,0 +1,88 @@
+DOM :- When a web page is loaded, the browser creates a Documnent Object Model (DOM) of the page.
+
+.                                                         Window
+.                                                           |
+.                                                        Documnent
+.                                                            |
+.                                                           HTML
+.                                                            |
+.                                            ----------------------------------
+.                                            |                               |
+.                                           Head                            Body
+.                                            |                               |
+.        -------------------------------------                           ------------
+.        |          |           |           |                            |          | 
+.        Meta      Meta       Title        Link                          Div      Script      
+.                                                                         |
+.                                                        ------------------------------------
+.                                                        |          |           |           |     
+.                                                      Img         h1           p          div
+
+
+
+DOM Manipulation
+''''''''''''''''
+Selecting with ID :- document.getElementById("IdName");
+Selecting with Class :- document.getElementsByClassName("ClassNamehogayaha");   ****There will be ElementS not Element
+Selecting with Tag :- document.getElementByTagName("p");
+
+Query Selector
+''''''''''''''
+document.querySelector("myId/myClass/tag");     **** Pahla chiz ko target karega ***Class hamesha '.' Dot se start hoga
+document.querySelectorAll("myId/myClass/tag");  **** saara chiz ko target karega ****id hamesha '#' se start hoga
+
+for ex - 
+.      let firstElement = document.querySelector("p");
+.       console.dir(firstElement);
+.
+.       let allElement = document.querySelectorall(".");
+.        console.dir(allElement);
+
+.........
+DOM Tree 
+'''''''''
+*   Text Node
+*   Comment
+*   Elements
+
+Properties
+''''''''''
+*   tagNmae : return tag for html
+*   innerText : returns the text content of the element and its children
+*   innerHTML : return the plain text or HTML contents in the element
+*   textContent : textContent : returns textual content even for hidden elements.
+
+Attributes         // <div class = "box"> ... </div>       Attribute = class : Value = box
+''''''''''
+getAttribute(attr) // to get the attribute value
+setAttribute(attr, value)
+
+Insert Elements     //  let element = document.createElement("div")
+'''''''''''''''
+node.append(element)    // adds at the end of node(inside)
+node.prepend(element)   // adds at the start of node(inside)
+node.before(element)    // adds before the node(outside)
+node.after(element)     // adds after the node(outside)
+
+for ex- 
+    let newBtn = document.createElement("button");
+    newBtn.innerText = 'click Me!';
+    console.log(newBtn);
+
+    let div = document.querySelector("div");
+    div.append(newBtn);
+
+Delete Element
+''''''''''''''
+node.remove()   // remove the node
+
+.............
+Events in JS
+''''''''''''
+The change in state of an object is known as an Event
+Events are fired to notify code of "interesting Changes" that may affect execution.
+* Mouse Event (click, double click etc.)
+* Keyboards Event(keypress, keyup...etc)
+* Form Events (Submit etc)
+* Print event & many more
+

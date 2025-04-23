@@ -1,0 +1,40 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.3 header-3
+/*----------------------------------------*/
+.header__logo-3 {
+  max-width: 100% !important;
+
+  .header__hamburger {
+    margin-left: -80px !important;
+
+    @media (max-width: 1750px) {
+      margin-left: 0 !important;
+    }
+  }
+}
+.header-top-menu ul li a {
+  font-size: 14px;
+  color: var(--rr-common-white) !important;
+  font-family: var(--rr-ff-body);
+  font-style: normal;
+  line-height: 17px;
+  transition: .3s;
+  &:hover {
+    color: var(--rr-theme-primary) !important;
+    text-decoration: none !important;
+  }
+}
+.header__logo-3 a img {
+  width: 158px;
+  height: auto;
+}
+.header__social a {
+  & svg {
+    transition: .3s;
+    &:hover path {
+      stroke: var(--rr-theme-primary);
+    }
+  }
+}

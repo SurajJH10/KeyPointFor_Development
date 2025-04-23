@@ -1,0 +1,20 @@
+.header__area {
+    background: transparent;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+
+.rs-sticky {
+    position: fixed !important;
+    top: 0;
+    z-index: 111;
+    inset-inline-end: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    /* -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown; */
+    /* animation: 500ms ease-in-out 0s normal none 1 running fadeInDown; */
+    background: var(--rr-common-white) !important;
+    box-shadow: 0px 10px 20px 0px rgba(0, 29, 8, 0.1);
+    border-top: 0;
+}
